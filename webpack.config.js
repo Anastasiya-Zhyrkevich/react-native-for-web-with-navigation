@@ -1,6 +1,6 @@
 const path = require('path');
 
-const appDirectory = path.resolve(__dirname, '../');
+const appDirectory = path.resolve(__dirname, './');
 
 // This is needed for webpack to compile JavaScript.
 // Many OSS React Native packages are not compiled to ES5 before being
@@ -14,7 +14,8 @@ const babelLoaderConfiguration = {
   //   path.resolve(appDirectory, 'src/index.web.js'),
   //   path.resolve(appDirectory, 'src'),
   //   path.resolve(appDirectory, 'node_modules/react-native-uncompiled'),
-  //   path.resolve(appDirectory, 'node_modules/react-native-gesture-handler')
+  //   path.resolve(appDirectory, 'node_modules/react-native-gesture-handler'),
+  //   path.resolve(appDirectory, 'node_modules/react-native-screens'),
   // ],
   use: {
     loader: 'babel-loader',
@@ -27,6 +28,7 @@ const babelLoaderConfiguration = {
     }
   }
 };
+
 
 // This is needed for webpack to import static images in JavaScript files.
 const imageLoaderConfiguration = {
