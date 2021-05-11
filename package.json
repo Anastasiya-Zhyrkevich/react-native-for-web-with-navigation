@@ -22,7 +22,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-react-native-web": "^0.12.2",
     "babel-preset-react": "^6.24.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-native-gesture-handler": "^1.6.1",
